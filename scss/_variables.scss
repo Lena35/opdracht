@@ -1,0 +1,37 @@
+// fonts
+@font-face {
+	font-family: "DMSans_regular";
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/dmsans-regular-webfont.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "DMSans_bold";
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/dmsans-bold-webfont.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "DMSans_italic";
+	font-style: italic;
+	font-weight: 400;
+	src: url(../fonts/dmsans-italic-webfont.woff2) format("woff2");
+}
+
+// colors
+$lightblue: #008DFF;
+$darkblue: #161D6C;
+$pink: #FF4879;
+$grey: #6A6F83;
+$green: #29B282;
+$black: #000;
+$white: #FFF;
+
+// font sizes
+$fontSize14: 0.875em;
+$fontSize16: 1em;
+$fontSize18: 1.125em;
+$fontSize34: 2.125em;
+$fontSize54: 3.375em;

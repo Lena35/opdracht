@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "DMSans_regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/dmsans-regular-webfont.woff2) format("woff2"); }
+
+@font-face {
+  font-family: "DMSans_bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/dmsans-bold-webfont.woff2) format("woff2"); }
+
+@font-face {
+  font-family: "DMSans_italic";
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/dmsans-italic-webfont.woff2) format("woff2"); }
+
+h1 {
+  font-size: 3.375em;
+  color: #161D6C;
+  font-family: "DMSans_bold"; }
+
+h2 {
+  font-size: 2.125em;
+  color: #161D6C;
+  font-family: "DMSans_bold"; }
+
+p {
+  font-size: 1.125em;
+  color: #6A6F83; }
+
+.button {
+  background-color: #FF4879;
+  color: #FFF;
+  border: 2px solid #FF4879;
+  border-radius: 30px;
+  padding: 15px 25px; }
+  .button:hover {
+    border: 2px solid #FF4879;
+    color: #FF4879; }
+  .button .twitter:after {
+    content: "\f061";
+    font-family: "Font Awesome 5 Free";
+    color: #FFF; }
+
+body {
+  max-width: 1600px; }
+
+.container {
+  width: 1170px; }
+
+.section-hero {
+  background-image: url("../imgs/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 730px;
+  max-width: 100%; }
+  .section-hero p {
+    padding-right: 18px; }
+
+header {
+  margin-bottom: 50px; }
+  header .menu li a {
+    color: #161D6C; }
+  header .contact li a {
+    color: #008DFF; }
+    header .contact li a:hover {
+      color: #008DFF; }
+  header .menu li a,
+  header .contact li a {
+    font-size: 1em;
+    font-weight: bold; }
+    header .menu li a:hover,
+    header .contact li a:hover {
+      text-decoration: underline; }
