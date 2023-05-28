@@ -22,10 +22,21 @@ p {
 	border-radius: 30px;
 	padding: 15px 25px;
 
+	i {
+		margin-left: 10px;
+	}
+
 	&:hover {
 		border: 2px solid $pink;
 		color: $pink;
+		background-color: $white;
 	}
+}
+
+.blue-rectangle {
+	height: 24px;
+	width: 50px;
+	background-color: $lightblue;
 }
 
 body {

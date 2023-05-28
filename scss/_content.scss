@@ -6,6 +6,10 @@
 	height: 730px;
 	max-width: 100%;
 
+	h1 {
+		width: 382px;
+	}
+
 	p {
 		padding-right: 18px;
 	}
@@ -19,5 +23,36 @@
 		margin-bottom: 0;
 		padding: 16px 38px;
 		color: $white;
+	}
+}
+
+.section-usps {
+}
+
+.section-data {
+	.table {
+		tr {
+			td,
+			th {
+				border: none;
+				padding: 10px 0;
+
+				i {
+					color: $green;
+					font-size: 8px;
+				}
+			}
+
+			td {
+				&:first-of-type {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+
+	a {
+		color: $pink;
+		font-weight: 700;
 	}
 }

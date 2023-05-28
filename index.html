@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
 		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -16,63 +16,64 @@
 <body>
 	<header>
 		<section class="section-header">
-			<div class="container">
-				<div class="row">
-					<nav class="navbar navbar-expand-lg navbar-light">
-						<div class="col-3">
-							<a href="index.html">
-								<img src="imgs/logo.svg" alt="">
-							</a>
+			<div class="container px-0">
+				<nav class="navbar navbar-expand-lg px-0">
+					<div class="col-3 px-0">
+						<a href="index.html">
+							<img src="imgs/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="col-8 offset-md-1">
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav menu mr-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Private lease</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">De auto</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Ik heb interesse</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav contact mr-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="mailto:sales@starlease.nl"><img src="imgs/envelope.svg"
+											alt=""> sales@starlease.nl</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tel:0543123456"><img src="imgs/phone.svg" alt=""> 0543
+										- 123 456</a>
+								</li>
+							</ul>
 						</div>
-						<div class="col-8 offset-md-1">
-							<button class="navbar-toggler" type="button" data-toggle="collapse"
-								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-								aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-								<ul class="navbar-nav menu mr-auto">
-									<li class="nav-item">
-										<a class="nav-link" href="#">Private lease</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">De auto</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Ik heb interesse</a>
-									</li>
-								</ul>
-								<ul class="navbar-nav contact mr-auto">
-									<li class="nav-item">
-										<a class="nav-link" href="mailto:sales@starlease.nl"><img
-												src="imgs/envelope.svg" alt=""> sales@starlease.nl</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="tel:0543123456"><img src="imgs/phone.svg" alt=""> 0543
-											- 123 456</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-				</div>
+					</div>
+				</nav>
 			</div>
 		</section>
 	</header>
 	<section class="section-hero">
+		<div class="blue-rectangle"></div>
+		<div class="pink-rectangle"></div>
+		<div class="blue-arrow"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-4 px-0">
 					<h1>Starlease is private leasen zonder zorgen.</h1>
-					<p>Het nieuwe autorijden. Zonder zorgen, met het grootste gemak, voor de scherpste prijs. Bij
+					<p class="py-3">Het nieuwe autorijden. Zonder zorgen, met het grootste gemak, voor de scherpste
+						prijs. Bij
 						StarLease regelen we dat voor u!</p>
 					<a class="btn button" href="#">Ik wil meer weten <i class="fas fa-arrow-right"></i></a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="section-banner">
+	<section class="section-banner mb-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-3">
@@ -87,13 +88,13 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section class="section-usps">
 		<div class="container py-5">
 			<div class="row">
 				<div class="col-4">
 					<img src="imgs/auto_2.png" alt="">
 				</div>
-				<div class="col-7 offset-md-1">
+				<div class="col-7 offset-md-1 pl-5 d-flex flex-wrap align-content-center">
 					<h2>Waarom Private Lease?</h2>
 					<p>Het nieuwe autorijden. Zonder zorgen, met het grootste gemak, Een gloednieuwe auto rijden met
 						lage maandlasten, lange tijd was het alleen voor zakelijke leaserijders weggelegd. Met de komst
@@ -116,7 +117,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section class="section-data">
 		<div class="container py-5">
 			<div class="row">
 				<div class="col-5">
@@ -124,6 +125,31 @@
 					<p>De Opel KARL is dé perfecte stadsauto met zijn compacte design. De auto beschikt over alles wat
 						je nodig hebt, inclusief 5 deuren, tot 5 volwaardige zitplaatsen, uitstekend comfort, goede
 						rijeigenschappen, en de nieuwste veiligheid- en comfort voorzieningen.</p>
+					<table class="table">
+						<tbody>
+							<tr>
+								<th scope="row"><i class="fas fa-circle"></i></th>
+								<td>Motor</td>
+								<td>1.0 Turbo</td>
+							</tr>
+							<tr>
+								<th scope="row"><i class="fas fa-circle"></i></th>
+								<td>Brandstof</td>
+								<td>Benzine</td>
+							</tr>
+							<tr>
+								<th scope="row"><i class="fas fa-circle"></i></th>
+								<td>Transmissie</td>
+								<td>Handgeschakeld</td>
+							</tr>
+							<tr>
+								<th scope="row"><i class="fas fa-circle"></i></th>
+								<td>Vermogen</td>
+								<td>73 PK</td>
+							</tr>
+						</tbody>
+					</table>
+					<a href="#">Bekijk alle specificaties <i class="fas fa-plus"></i></a>
 				</div>
 				<div class="col-7">
 					<img src="imgs/auto.png" alt="">
@@ -132,21 +158,65 @@
 		</div>
 	</section>
 	<footer>
-		<section class="footer-top">
+		<section class="footer-top pt-5">
 			<div class="container py-5">
-				<div class="row">
-					<div class="col-5">
+				<div class="row py-4">
+					<div class="col-5 pr-5">
+						<div class="blue-rectangle d-flex justify-content-end"></div>
 						<h2>Meer weten over Starlease?</h2>
-						<p>Laat je gegevens achter via onderstaand formulier en wij nemen zo spoedig mogelijk contact
+						<p class="py-3">Laat je gegevens achter via onderstaand formulier en wij nemen zo spoedig
+							mogelijk contact
 							met u op</p>
 						<a href="mailto:sales@starlease.nl"><img src="imgs/envelope.svg" alt=""> sales@starlease.nl</a>
 						<a href="tel:0543123456"><img src="imgs/phone.svg" alt=""> 0543 - 123 456</a>
 					</div>
 					<div class="col-7">
-						<form action=""></form>
+						<form>
+							<div class="form-group">
+								<label for="name">Voor- en achternaam</label>
+								<input type="text" class="form-control" id="name">
+							</div>
+							<div class="form-group">
+								<label for="address">Adres</label>
+								<input type="text" class="form-control" id="address">
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-3">
+									<label for="zipcode">Postcode</label>
+									<input type="text" class="form-control" id="zipcode">
+								</div>
+								<div class="form-group col-md-9">
+									<label for="city">Woonplaats</label>
+									<input type="text" class="form-control" id="city">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="email">Emailadres</label>
+									<input type="email" class="form-control" id="email">
+								</div>
+								<div class="form-group col-md-6">
+									<label for="phone">Telefoon</label>
+									<input type="text" class="form-control" id="phone">
+								</div>
+							</div>
+							<div class="form-row pt-3 d-flex justify-content-between align-items-center">
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="gridCheck">
+										<label class="form-check-label" for="gridCheck">
+											Ik ga akkoord met de <a href="#">algemene voorwaarden</a>
+										</label>
+									</div>
+								</div>
+								<button type="submit" class="btn button">Versturen <i
+										class="fas fa-arrow-right"></i></button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
+			<div class="blue-triangle"></div>
 		</section>
 		<section class="footer-bottom py-4">
 			<div class="container py-5">
@@ -166,8 +236,11 @@
 			</div>
 		</section>
 	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
 		crossorigin="anonymous"></script>
 </body>
 
