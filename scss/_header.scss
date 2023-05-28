@@ -10,6 +10,8 @@ header {
 	}
 
 	.contact {
+		margin-left: 30px;
+
 		li {
 			a {
 				color: $lightblue;
@@ -24,6 +26,8 @@ header {
 	.menu,
 	.contact {
 		li {
+			margin-right: 22px;
+
 			a {
 				font-size: $fontSize16;
 				font-weight: bold;

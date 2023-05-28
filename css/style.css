@@ -39,10 +39,6 @@ p {
   .button:hover {
     border: 2px solid #FF4879;
     color: #FF4879; }
-  .button .twitter:after {
-    content: "\f061";
-    font-family: "Font Awesome 5 Free";
-    color: #FFF; }
 
 body {
   max-width: 1600px; }
@@ -60,18 +56,47 @@ body {
   .section-hero p {
     padding-right: 18px; }
 
+.section-banner {
+  background-color: #161D6C;
+  padding: 30px 38px; }
+  .section-banner p {
+    margin-bottom: 0;
+    padding: 16px 38px;
+    color: #FFF; }
+
 header {
   margin-bottom: 50px; }
   header .menu li a {
     color: #161D6C; }
-  header .contact li a {
-    color: #008DFF; }
-    header .contact li a:hover {
+  header .contact {
+    margin-left: 30px; }
+    header .contact li a {
       color: #008DFF; }
-  header .menu li a,
-  header .contact li a {
-    font-size: 1em;
-    font-weight: bold; }
-    header .menu li a:hover,
-    header .contact li a:hover {
+      header .contact li a:hover {
+        color: #008DFF; }
+  header .menu li,
+  header .contact li {
+    margin-right: 22px; }
+    header .menu li a,
+    header .contact li a {
+      font-size: 1em;
+      font-weight: bold; }
+      header .menu li a:hover,
+      header .contact li a:hover {
+        text-decoration: underline; }
+
+footer .footer-top {
+  background-color: #F6F7F8; }
+  footer .footer-top a {
+    color: #008DFF;
+    text-decoration: none;
+    font-weight: 700; }
+    footer .footer-top a:hover {
       text-decoration: underline; }
+
+footer .footer-bottom p,
+footer .footer-bottom a {
+  margin-bottom: 0;
+  color: #6A6F83;
+  font-size: 0.875em;
+  margin-left: 30px; }
