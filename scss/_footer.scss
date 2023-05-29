@@ -1,7 +1,7 @@
 footer {
 	.footer-top {
 		background-color: $lightgrey;
-		
+
 		.blue-rectangle {
 			transform: translateY(-136px) skewX(-20deg);
 			position: absolute;
@@ -30,7 +30,14 @@ footer {
 
 				a {
 					color: $darkblue;
+					font-weight: 400;
 					text-decoration: underline;
+				}
+			}
+
+			.form-check {
+				label {
+					font-weight: 400;
 				}
 			}
 		}

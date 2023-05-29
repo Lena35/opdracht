@@ -6,6 +6,29 @@
 	height: 730px;
 	max-width: 100%;
 
+	.blue-rectangle {
+		transform: translate(86px, 285px) skewX(-20deg);
+		width: 32px;
+		height: 15px;
+	}
+
+	.pink-rectangle {
+		background-color: $pink;
+		transform: translate(1120px, 0) skewX(-20deg);
+		height: 15px;
+		width: 32px;
+	}
+
+	.blue-arrow {
+		background-color: $lightblue;
+		width: 118px;
+		height: 105px;
+		clip-path: polygon(100% 0, 0 41%, 100% 100%);
+		position: absolute;
+		top: 180px;
+		right: 14px;
+	}
+
 	h1 {
 		width: 382px;
 	}
@@ -19,14 +42,74 @@
 	background-color: $darkblue;
 	padding: 30px 38px;
 
-	p {
-		margin-bottom: 0;
-		padding: 16px 38px;
-		color: $white;
+	.inner-banner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		i {
+			color: $green;
+			background-color: $white;
+			border-radius: 50%;
+			height: 40px;
+			width: 40px;
+			float: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		p {
+			margin-bottom: 0;
+			padding: 16px;
+			font-weight: 700;
+			white-space: nowrap;
+			color: $white;
+		}
 	}
 }
 
 .section-usps {
+	.background-clippy {
+		background-color: $backgroundgrey;
+		width: 870px;
+		height: 362px;
+		position: absolute;
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+		transform: translate(75px, 370px);
+	}
+
+	.blue-rectangle {
+		width: 50px;
+		height: 24px;
+		position: absolute;
+		
+		&:first-child {
+			transform: translate(1300px, 20px) skewX(-20deg);
+		}
+
+		&:not(:first-child) {
+			transform: translate(250px, 662px) skewX(-20deg);
+			z-index: 1;
+		}
+	}
+
+	a {
+		margin-top: 50px;
+	}
+
+	.inner-usps {
+		p {
+			font-weight: 700;
+			color: $darkblue;
+			font-size: $fontSize16;
+
+			i {
+				color: $green;
+				margin-right: 20px;
+			}
+		}
+	}
 }
 
 .section-data {

@@ -20,6 +20,7 @@ p {
 	color: $white;
 	border: 2px solid $pink;
 	border-radius: 30px;
+	font-weight: 700;
 	padding: 15px 25px;
 
 	i {
@@ -34,8 +35,6 @@ p {
 }
 
 .blue-rectangle {
-	height: 24px;
-	width: 50px;
 	background-color: $lightblue;
 }
 

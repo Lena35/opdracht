@@ -35,6 +35,7 @@ p {
   color: #FFF;
   border: 2px solid #FF4879;
   border-radius: 30px;
+  font-weight: 700;
   padding: 15px 25px; }
   .button i {
     margin-left: 10px; }
@@ -44,8 +45,6 @@ p {
     background-color: #FFF; }
 
 .blue-rectangle {
-  height: 24px;
-  width: 50px;
   background-color: #008DFF; }
 
 body {
@@ -61,6 +60,23 @@ body {
   background-position: center;
   height: 730px;
   max-width: 100%; }
+  .section-hero .blue-rectangle {
+    transform: translate(86px, 285px) skewX(-20deg);
+    width: 32px;
+    height: 15px; }
+  .section-hero .pink-rectangle {
+    background-color: #FF4879;
+    transform: translate(1120px, 0) skewX(-20deg);
+    height: 15px;
+    width: 32px; }
+  .section-hero .blue-arrow {
+    background-color: #008DFF;
+    width: 118px;
+    height: 105px;
+    clip-path: polygon(100% 0, 0 41%, 100% 100%);
+    position: absolute;
+    top: 180px;
+    right: 14px; }
   .section-hero h1 {
     width: 382px; }
   .section-hero p {
@@ -69,10 +85,55 @@ body {
 .section-banner {
   background-color: #161D6C;
   padding: 30px 38px; }
-  .section-banner p {
-    margin-bottom: 0;
-    padding: 16px 38px;
-    color: #FFF; }
+  .section-banner .inner-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section-banner .inner-banner i {
+      color: #29B282;
+      background-color: #FFF;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .section-banner .inner-banner p {
+      margin-bottom: 0;
+      padding: 16px;
+      font-weight: 700;
+      white-space: nowrap;
+      color: #FFF; }
+
+.section-usps .background-clippy {
+  background-color: #F6F7F8;
+  width: 870px;
+  height: 362px;
+  position: absolute;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transform: translate(75px, 370px); }
+
+.section-usps .blue-rectangle {
+  width: 50px;
+  height: 24px;
+  position: absolute; }
+  .section-usps .blue-rectangle:first-child {
+    transform: translate(1300px, 20px) skewX(-20deg); }
+  .section-usps .blue-rectangle:not(:first-child) {
+    transform: translate(250px, 662px) skewX(-20deg);
+    z-index: 1; }
+
+.section-usps a {
+  margin-top: 50px; }
+
+.section-usps .inner-usps p {
+  font-weight: 700;
+  color: #161D6C;
+  font-size: 1em; }
+  .section-usps .inner-usps p i {
+    color: #29B282;
+    margin-right: 20px; }
 
 .section-data .table tr td,
 .section-data .table tr th {
@@ -134,7 +195,10 @@ footer .footer-top {
     font-weight: 700; }
     footer .footer-top form label a {
       color: #161D6C;
+      font-weight: 400;
       text-decoration: underline; }
+  footer .footer-top form .form-check label {
+    font-weight: 400; }
   footer .footer-top .blue-triangle {
     height: 75px;
     width: 75px;
