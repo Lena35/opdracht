@@ -34,14 +34,45 @@ p {
 	}
 }
 
+img {
+	max-width: 100%;
+}
+
 .blue-rectangle {
 	background-color: $lightblue;
 }
 
-body {
-	max-width: 1600px;
+.pink-rectangle {
+	background-color: $pink;
 }
 
-.container {
-	width: 1170px;
+.mobile {
+	display: none;
+}
+
+.desktop {
+	display: block;
+}
+
+@media screen and (max-width: 475px){
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	h1 {
+		font-size: $fontSize36;
+	}
+	
+	h2 {
+		font-size: $fontSize24;
+	}
+	
+	.py-5 {
+		padding-top: 40px !important;
+		padding-bottom: 40px !important;
+	}
 }

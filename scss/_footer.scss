@@ -6,6 +6,8 @@ footer {
 			transform: translateY(-136px) skewX(-20deg);
 			position: absolute;
 			right: 0;
+			width: 50px;
+			height: 24px;
 		}
 
 		h2 {
@@ -61,6 +63,58 @@ footer {
 
 		a {
 			text-decoration: underline;
+		}
+	}
+}
+
+@media screen and (max-width: 475px) {
+	footer {
+		.footer-top {
+			&.pt-5 {
+				padding-top: 0 !important;
+			}
+
+			.py-5 {
+				padding-top: 0 !important;
+			}
+
+			h2 {
+				font-size: $fontSize36;
+			}
+
+			a {
+				display: block;
+				margin-bottom: 5px;
+			}
+
+			.blue-triangle {
+				height: 50px;
+				width: 50px;
+			}
+
+			.blue-rectangle {
+				transform: translate(-20px, -38px) skewX(-20deg);
+			}
+		}
+
+		.footer-bottom {
+			&.py-4 {
+				padding-top: 0 !important;
+				padding-bottom: 0 !important;
+			}
+
+			.footer-logo {
+				display: block !important;
+
+				p {
+					margin: 15px 0 34px 0;
+				}
+			}
+
+			a {
+				display: block;
+				margin-left: 0;
+			}
 		}
 	}
 }

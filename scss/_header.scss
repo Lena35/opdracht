@@ -48,3 +48,19 @@ header {
 		}
 	}
 }
+
+@media screen and (max-width: 475px) {
+	header {
+		padding: 10px;
+		margin-bottom: 0;
+
+		.mobile {
+			display: inline-block;
+			margin-left: 15px;
+
+			&.email {
+				padding-left: 45px;
+			}
+		}
+	}
+}
